@@ -18,9 +18,9 @@ def choose
 
   while input != "P" && input != "R" && input != "S" do
     puts "Choose one: (P/R/S)"
-    input = gets.chomp.upcase
+    input = gets.chomp
   end
-  return input
+  return input.upcase
 end
 
 def say(sentence)
